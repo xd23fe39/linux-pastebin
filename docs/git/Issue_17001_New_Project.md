@@ -6,7 +6,7 @@
 
 # Issue 17/002
 
-Dieses Dokument ist Teil von [Technical Notes][LNK001] von [xd23fe39][LNK002].
+Dieses Dokument ist Teil der [Technical Notes][LNK001] von [xd23fe39][LNK002].
 
 ## Titel
 
@@ -39,7 +39,7 @@ einem lokalen Projektordner *verknüpft* werden.
   git remote add origin https://github.com/xd23fe39/technical-notes.git
   git push -u origin master
   ```
-  
+
 ### Links
 
 - https://help.github.com/

@@ -42,5 +42,9 @@ Der Autor
 
 Linux:
 
-- [Issue 17/001](linux/Issue_17001_mediascanner-service-2.0.md)
-- [Issue_17/002](linux/Issue_17002_grub-bootloader.md)
+- [Issue 17/001](linux/Issue_17001_mediascanner-service-2.0.md) MediaScanner
+- [Issue 17/002](linux/Issue_17002_grub-bootloader.md) GRUB
+
+Git
+
+- [Issue 17/001](git/Issue_17001_New_Project.md) Neues Projekt

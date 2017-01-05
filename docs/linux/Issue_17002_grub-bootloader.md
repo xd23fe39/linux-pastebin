@@ -6,7 +6,7 @@
 
 # Issue 17/002
 
-Dieses Dokument ist Teil von [Technical Notes][LNK001] von [xd23fe39][LNK002].
+Dieses Dokument ist Teil der [Technical Notes][LNK001] von [xd23fe39][LNK002].
 
 ## Titel
 

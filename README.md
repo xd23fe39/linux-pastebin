@@ -1,3 +1,4 @@
+[tn]: docs/README.md
 [Logo]: md.png
 
 <!-- Referenzen -->
@@ -28,10 +29,14 @@ A **[Markdown][]** Document.
 
 <!-- Einfacher Haftungsausschluss -->
 
-Mit der Nutzung der **Technical Notes** stimmen Sie den folgenden Nutzungsvereinbarungen und Vorbehaltsklauseln zu:
+Mit der Nutzung der **Technical Notes** stimmt der Nutzer den folgenden Nutzungsvereinbarungen und Vorbehaltsklauseln zu:
 
 *Der Autor übernimmt keinerlei Gewähr für die Aktualität, Richtigkeit und Vollständigkeit der bereitgestellten Informationen. Haftungsansprüche gegen den Autor, welche sich auf Schäden materieller oder ideeller Art beziehen, die durch die Nutzung oder Nichtnutzung der dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und unvollständiger Informationen verursacht wurden, sind grundsätzlich ausgeschlossen, sofern seitens des Autors kein nachweislich vorsätzliches oder grob fahrlässiges Verschulden vorliegt. Der Autor behält es sich ausdrücklich vor, Teile der Seiten oder das gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.*
 
 Der Autor
 
 <xd23fe39@yahoo.de>
+
+* * *
+
+Hier geht es zu den [Technical Notes][tn].
