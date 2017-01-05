@@ -43,4 +43,4 @@ Der Autor
 Linux:
 
 - [Issue 17/001](linux/Issue_17001_mediascanner-service-2.0.md)
-- [Issue_17/002](linux/Issue_17002_grup-bootloader.md)
+- [Issue_17/002](linux/Issue_17002_grub-bootloader.md)

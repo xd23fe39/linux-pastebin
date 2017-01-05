@@ -10,7 +10,7 @@ Dieses Dokument ist Teil von [Technical Notes][LNK001] von [xd23fe39][LNK002].
 
 ## Titel
 
-Der Prozess **mediascanner-service-2.0** blokiert das System.
+Der Prozess **mediascanner-service-2.0** blockiert das System.
 
 ## Beschreibung
 
@@ -19,7 +19,7 @@ Nach dem Einhängen eines Wechseldatenträgers startet ein Prozess mit dem Namen
 
 Der Prozess **mediascanner-service-2.0** belegt nahezu die gesamte CPU.
 
-Das System scheint "blockiert" bzw. "beschäftigt" zu sein.
+Das System scheint "blockiert" bzw. stark "beschäftigt" zu sein.
 
 ## Lösung
 
