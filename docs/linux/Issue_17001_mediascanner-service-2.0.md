@@ -8,11 +8,20 @@
 
 Dieses Dokument ist Teil der [Technical Notes][LNK001] von [xd23fe39][LNK002].
 
+Issue             |Beschreibung
+------------------|------------------------
+Betriebsystem     |Linux/Ubuntu
+
+
 ## Titel
 
 Der Prozess **mediascanner-service-2.0** blockiert das System.
 
 ## Beschreibung
+
+Der Mediascanner löst im Systemlog `dmesg -w` permanente Fehlereinträge aus:
+
+`[ 2554.124515] audit: type=1400 audit(1483734126.695:59256): apparmor="DENIED" operation="open" profile="/usr/lib/*/mediascanner-2.0/mediascanner-extractor..."`
 
 Nach dem Einhängen eines Wechseldatenträgers startet ein Prozess mit dem Namen
 **mediascanner-service-2.0**.
@@ -23,13 +32,22 @@ Das System scheint "blockiert" bzw. stark "beschäftigt" zu sein.
 
 ## Lösung
 
-### Ubuntu: *Systemeinstellungen*
+### Deaktivieren von `mediascanner-service`
 
-1. Starten von `Systemeinstellungen` | `Informationen` | `Wechselmedien`
+Systemweit:
 
-2. Aktivieren Sie die Einstellung `Beim Einlegen von Datenträgern nie Nachfragen oder Programme starten`
+```
+sudo sh -c "echo manual >> /usr/share/upstart/sessions/mediascanner-2.0.conf"
+```
 
-### Ubuntu: Terminal
+Oder nur für den aktuellen Benutzer:
+
+```
+echo manual >> ~/.config/upstart/mediascanner-2.0.override
+```
+
+
+### Deinstallieren von `mediascanner-service`
 
 Oder gleich das gesamte Funktionspaket deinstallieren:
 
@@ -40,6 +58,15 @@ sudo apt-get purge mediascanner2.0 libmediascanner-2.0-0
 Prozess anzeigen mit `top` oder `ps -ef | grep mediascanner`.
 
 
-### Links
+### Wechselmedien-Einstellungen ändern
+
+1. Starten von `Systemeinstellungen` | `Informationen` | `Wechselmedien`
+
+2. Aktivieren Sie die Einstellung `Beim Einlegen von Datenträgern nie Nachfragen oder Programme starten`
+
+
+
+## Links
 
 - <https://bugs.launchpad.net/ubuntu/+source/mediascanner2/+bug/1398614>
+- <http://askubuntu.com/questions/541928/how-to-disable-mediascanner-service#542582>
