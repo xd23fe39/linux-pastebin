@@ -1,2 +1,6 @@
+# .gitignore
+# Mardown-Helper
 html/*
-temp
+res/*
+*.pdf
+*.zip
