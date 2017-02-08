@@ -14,7 +14,7 @@ cat | cksum | comm | csplit | cut | expand | fmt | fold | head | join | md5sum |
 
 #### Shell 	
 
-basename | chroot | date | dirname | du | echo | env | expr | factor | false | groups | hostid | id | link | logname | nice | nohup | pathchk | pinky | printenv | printf | pwd | readlink | seq | sleep | stat | stty | tee | test | true | tty | uname | unlink | users | who | whoami | yes
+basename | chroot | date | dirname | du | echo | env | expr | factor | false | groups | hostid | id | link | logname | nice | nohup | pathchk | pinky | printenv | printf | pwd | readlink | seq | sleep | stat | stty | tee | test | true | tty | uname | unlink | users | who | whoami | yes | $0, $?
 
 #### Netzwerk
 
@@ -31,3 +31,6 @@ SCRIPT_NAME="`basename $0`"
 
 printenv LANG
 ```
+``` 
+history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
+``` 
