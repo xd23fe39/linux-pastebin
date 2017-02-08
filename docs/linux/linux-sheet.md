@@ -1,5 +1,9 @@
 # Linux Command Sheet
 
+#### Prozesse
+
+iostat | ps | top | vmstat
+
 #### Dateien 	
 
 chgrp | chown | chmod | cp | dd | df | dir | dircolors | install | ln | ls | mkdir | mkfifo | mknod | mv | rm | rmdir | shred | sync | touch | vdir
@@ -12,3 +16,18 @@ cat | cksum | comm | csplit | cut | expand | fmt | fold | head | join | md5sum |
 
 basename | chroot | date | dirname | du | echo | env | expr | factor | false | groups | hostid | id | link | logname | nice | nohup | pathchk | pinky | printenv | printf | pwd | readlink | seq | sleep | stat | stty | tee | test | true | tty | uname | unlink | users | who | whoami | yes
 
+#### Netzwerk
+
+arp | ifconfig | iwconfig | man interfaces | netstat | ping | tcpdump | telnet | traceroute | 
+
+## Beispiel
+
+```
+# SCRIPT_DIR setzen
+SCRIPT_DIR="`dirname $0`"
+
+# SCRIPT_DIR setzen
+SCRIPT_NAME="`basename $0`"
+
+printenv LANG
+```
