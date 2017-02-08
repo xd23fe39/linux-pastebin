@@ -14,7 +14,7 @@ Anlegen eines Benutzers unter Linux.
 
 ## Beschreibung
 
-Der Benutzer `smith` soll angelegt werden. Für die Benutzeranlage wird der Benutzer `root` benötigt.
+Der Benutzer `smith` soll - z.B. auf einem entfernten Linux-System - angelegt und das Kennwort des Benutzers gesetzt werden. Um sich anschließend über SSH mit dem Benutzer anmelden zu können, soll der eigene Public-Key `~/.ssh/id_rsa.pub` in den `authorized_keys` des neu angelegten Benutzers angelegt und eine ssh-Verbindung ohne Kennworteingabe durchgeführt werden.
 
 ## Lösung
 
