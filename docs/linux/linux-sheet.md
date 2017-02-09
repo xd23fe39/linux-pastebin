@@ -32,7 +32,12 @@ SCRIPT_NAME="`basename $0`"
 # Textausgabe
 printf "Hallo %s\n" "`printenv USER`"
 ```
-Andere:
+
+Beispiele zu `awk`:
+
+```
+df | awk '{ POS += 1; printf(" %3d %10dK %5s %s \n", POS, $3, $5, $6); SUM = SUM + $3; } END { print "Summe (benutzt): " SUM/(1024*1024) " GB"; }'
+```
 
 ``` 
 history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
