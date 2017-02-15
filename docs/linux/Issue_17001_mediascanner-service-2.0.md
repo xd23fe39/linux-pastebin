@@ -47,6 +47,15 @@ echo manual >> ~/.config/upstart/mediascanner-2.0.override
 ```
 
 
+### Anlegen der `.nomedia`-Datei
+
+Der `mediascanner` ignoriert Verzeichnisse mit `.nomedia`-Datei.
+
+```
+cd /path-to-large-filesystem
+echo "mediascanner: Ignore this Filesystem" >./.nomedia
+```
+
 ### Deinstallieren von `mediascanner-service`
 
 Oder gleich das gesamte Funktionspaket deinstallieren:
@@ -70,3 +79,4 @@ Prozess anzeigen mit `top` oder `ps -ef | grep mediascanner`.
 
 - <https://bugs.launchpad.net/ubuntu/+source/mediascanner2/+bug/1398614>
 - <http://askubuntu.com/questions/541928/how-to-disable-mediascanner-service#542582>
+- <http://askubuntu.com/questions/587489/what-is-the-mediascanner-service-and-how-to-avoid-getting-it-installed#628272>
