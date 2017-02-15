@@ -11,7 +11,7 @@ Dieses Dokument ist Teil der [Technical Notes][LNK001] von [xd23fe39][LNK002].
 
 ## Titel
 
-Aufwecken eines Gerätes durch Drücken von `Strg` + 'Alt' + 'F'.
+Aufwecken eines Gerätes durch Drücken von `Strg` + `Alt` + `F`.
 
 ## Beschreibung
 
