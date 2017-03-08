@@ -1,5 +1,10 @@
 # Kerberos
 
+[LNK001]: ../../README.md
+[LNK002]: xd23fe39@yahoo.de
+
+Dieses Dokument ist Teil der [Technical Notes][LNK001] von [xd23fe39][LNK002].
+
 #### Zusammenfassung
 
 - ein verteilter **Authentifizierungsdienst**
