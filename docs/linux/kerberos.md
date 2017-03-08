@@ -19,7 +19,34 @@
 
 - die Zeiteinstellungen zw. den beteiligten Systemen sollte synchronisiert sein ([NTP][RES002], Abweichungen < 300s)
 - Auflösung der vollständigen Domainnamen (FQDN) muss *forward-and-reverse-resolveable* sein
-- Firewall Konfiguration für Kerberos-Server
+- Firewall Konfiguration für Kerberos-Serverinstallation
+
+
+## Kerberos Tools `kinit` für den Client 
+
+```
+apt-get install krb5-user
+```
+
+```
+kinit -k -t /etc/apache2/http.keytab HTTP/www.example.com
+klist
+```
+
+## Apache als Kerberos Dienst konfigurieren
+
+>TODO!
+
+#### Kerberos-Unterstüzung des Firefox Browser konfigurieren
+
+Den Firefox Browser für SPNEGO und Kerberos konfigurieren:
+
+- http://www.microhowto.info/howto/configure_firefox_to_authenticate_using_spnego_and_kerberos.html
+
+
+## Kerberos Server Administration
+
+Informationen zu *Kerberos Server Administration* und `kadmin` findet man unter [http://web.mit.edu/Kerberos/][RES003].
 
 #### Firewall-Konfiguration
 
@@ -38,3 +65,4 @@ Bei Kerberos-Serverkonfiguration; siehe dazu auch die Einstellung von `kdc_ports
 
 [RES001]: https://de.wikipedia.org/wiki/Kerberos_%28Informatik%29
 [RES002]: https://de.wikipedia.org/wiki/Network_Time_Protocol
+[RES003]: http://web.mit.edu/Kerberos/krb5-1.8/krb5-1.8.3/doc/krb5-admin.htm
