@@ -46,3 +46,9 @@ ps -ef | awk '/apache/{ printf("%8s %6s \n",$2,$8);}'
 ``` 
 history | awk '{CMD[$2]++;count++;}END { for (a in CMD)print CMD[a] " " CMD[a]/count*100 "% " a;}' | grep -v "./" | column -c3 -s " " -t | sort -nr | nl |  head -n10
 ``` 
+
+#### User-Liste anzeigen mit UID, Name
+
+```
+sudo cat /etc/passwd | awk -F ':' '{ printf("%5s %s\n",$3, $1); }' | sort -n
+```
