@@ -32,7 +32,7 @@ durch einen Administrator realisiert werden.
 
 #### Systematisches Beobachten
 
-[WEB001]: http://www.theunixschool.com/2013/01/gawk-date-and-time-calculation-functions.html Aufgerufen am 2017-06-21.
+[WEB001]: http://www.theunixschool.com/2013/01/gawk-date-and-time-calculation-functions.html
 
 Weniger geeignet ist das Ergebnis für eine
 systematische Protokollierung und Überwachung. Eine Erweiterung der o.a. Befehlszeile
