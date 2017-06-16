@@ -2,6 +2,12 @@
 
 ## WLAN Einstellungen
 
+#### Funknetz-Infoblatt drucken
+
+Die Fritzbox stellt die Funktion `Infoblatt drucken` im Bereich **Funknetz** zur Verfügung. Nach jeder Änderung der Wireless LAN Konfiguration sollte das Dokument ausgedruckt und an einer zentralen Stelle im Haushalt hinterlegt werden.
+
+Es muss damit grechnet werden, dass manche Geräte ihre Verbindungsdaten *verlieren* bzw. durch Fehlverhalten von Benutzern die Verbindungsdaten verändert oder gelöscht werden.
+
 #### Name des WLAN-Funknetzes (SSID)
 ```
 XRAY175
