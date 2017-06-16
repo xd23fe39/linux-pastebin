@@ -4,7 +4,7 @@
 
 #### WPA-Verschlüsselung
 
-WPA-Modus:
+WPA-Modus [[1][WEB001]]:
 ```
 WPA2 (CCMP)
 ```
