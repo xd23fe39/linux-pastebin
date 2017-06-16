@@ -4,6 +4,15 @@
 
 #### WPA-Verschlüsselung
 
+Wireless LAN (Funknetzwerk) verschlüsseln [[1][WEB001]]:
+```
+Aktivieren von WPA-Verschlüsselung (größte Sicherheit, siehe WPA2)
+```
+
+Hier unbedingt die größte Sicherheit aktivieren. Alle WLAN-fähigen Geräte
+werden mit hoher Wahrscheinlichkeit WPA2 unterstützen. WPA gilt als unsicher,
+WEP sollte nicht mehr verwendet werden.
+
 WPA-Modus [[1][WEB001]]:
 ```
 WPA2 (CCMP)
