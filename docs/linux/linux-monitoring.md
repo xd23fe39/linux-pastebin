@@ -21,7 +21,6 @@ auf den meisten Unix-Systemen angezeigt werden.
 ```
 df -h
 ```
-#### Systematisches Beobachten
 
 Da uns in diesem vereinfachten Beispiel ausschließlich das `/home`-Verzeichnis interessiert,
 lässt sich die Anzeige entsprechend auf die Zeile `/home` reduzieren:
@@ -29,7 +28,11 @@ lässt sich die Anzeige entsprechend auf die Zeile `/home` reduzieren:
 df -h /home
 ```
 Mit dieser einfachen Befehlszeile kann bereits eine Beobachtung der Auslastung von Filesystem `/home`
-durch einen Administrator realisiert werden. Weniger geeignet ist das Ergebnis für eine
+durch einen Administrator realisiert werden. 
+
+#### Systematisches Beobachten
+
+Weniger geeignet ist das Ergebnis für eine
 systematische Protokollierung und Überwachung. Eine Erweiterung der o.a. Befehlszeile
 unter Berücksichtigung der folgenden Anforderungen ist erforderlich:
 
