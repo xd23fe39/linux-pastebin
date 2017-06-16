@@ -3,7 +3,7 @@
 ## Begriff
 
 Der Begriff **Monitoring** ist ein Überbegriff für die systematische Beobachtung, Messung, Protokollierung
-und Präsentation relevanter Größen eines zu überwachenden Systems. 
+und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökosystems. 
 
 ## Praxisbeispiele
 
