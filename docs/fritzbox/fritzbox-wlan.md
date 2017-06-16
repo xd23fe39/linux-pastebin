@@ -1,5 +1,24 @@
 # FritzBox Wireless LAN Konfiguration
 
+## WLAN Einstellungen
+
+#### Name des WLAN-Funknetzes (SSID)
+```
+XRAY175
+```
+Es sollten hier niemals der Modellname des Routers, der Familienname o.ä. Bezeichner
+verwendet werden.
+
+#### Name des WLAN-Funknetzes sichtbar
+```
+Aktivieren von Name des WLAN-Funknetzes sichtbar
+```
+
+Sicherer wäre hier das Deaktivieren der Einstellung - jedoch können sich einige
+Geräte ggf. nicht mit einem unsichtbaren WLAN-Funknetz verbinden. Deshalb und
+aus Gründen der Usability sollte die Einstellung aktiviert werden.
+
+
 ## WLAN-Sicherheit
 
 #### WPA-Verschlüsselung
@@ -13,12 +32,12 @@ Hier unbedingt die größte Sicherheit aktivieren. Alle WLAN-fähigen Geräte
 werden mit hoher Wahrscheinlichkeit WPA2 unterstützen. WPA gilt als unsicher,
 WEP sollte nicht mehr verwendet werden.
 
-WPA-Modus [[1][WEB001]]:
+#### WPA-Modus [[1][WEB001]]
 ```
 WPA2 (CCMP)
 ```
 
-WLAN-Netzwerkschlüssel:
+#### WLAN-Netzwerkschlüssel
 ```
 M5w6gjaPk9cV
 ```
@@ -30,7 +49,7 @@ man bei der Vergabe des Netzwerkschlüssels immer berücksichtigen.
 
 Eine Mindestlänge von 8 Zeichen wird empfohlen.
 
-WLAN-Zugang auf die bekannten WLAN-Geräte beschränken:
+#### WLAN-Zugang auf die bekannten WLAN-Geräte beschränken
 ```
 Aktivieren von WLAN-Zugang auf die bekannten WLAN-Geräte beschränken
 ```
