@@ -36,3 +36,11 @@ Die Ausgabe der folgenden Kommandozeile erfüllt die o.a. Anforderungen:
 ```
  df -h /home | tail -1 | awk -F" " '{printf("ID: FSH17001, TIME: %s, Wert: %d, (%s), DF:%s\n", strftime("%y-%m-%d %H:%M:%S"), $5, $5, $6);}'
 ```
+
+Die Ausgage der Kommandozeile sieht dann ungefähr so aus:
+```
+ID: FSH17001, TIME: 17-06-16 19:46:28, Wert: 45, (45%), DF:/home
+```
+
+Durch eine regelmäßige Ausführung der oben entwickelten Kommandozeile und Umleitung der 
+Ausgabe in eine Protokolldatei können Daten zur Systemüberwachung gewonnen werden.
