@@ -30,6 +30,14 @@ man bei der Vergabe des Netzwerkschlüssels immer berücksichtigen.
 
 Eine Mindestlänge von 8 Zeichen wird empfohlen.
 
+WLAN-Zugang auf die bekannten WLAN-Geräte beschränken:
+```
+Aktivieren von WLAN-Zugang auf die bekannten WLAN-Geräte beschränken
+```
+
+Diese Einstellung wird empfohlen. Sollen neue Gräte dem Wireless LAN hinzugefügt
+werden, kann diese Einstellung kurzfristig deaktiviert werden.
+
 
 [WEB001]:https://de.wikipedia.org/wiki/WPA2
 [WEB002]: http://www.onlinepasswortgenerator.de/
