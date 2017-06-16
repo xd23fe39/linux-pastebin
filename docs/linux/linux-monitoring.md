@@ -32,6 +32,8 @@ durch einen Administrator realisiert werden.
 
 #### Systematisches Beobachten
 
+[WEB001]: http://www.theunixschool.com/2013/01/gawk-date-and-time-calculation-functions.html
+
 Weniger geeignet ist das Ergebnis für eine
 systematische Protokollierung und Überwachung. Eine Erweiterung der o.a. Befehlszeile
 unter Berücksichtigung der folgenden Anforderungen ist erforderlich:
@@ -41,7 +43,7 @@ unter Berücksichtigung der folgenden Anforderungen ist erforderlich:
 - Eindeutige ID der Messgröße
 - Wert
 
-Die folgenden Kommandozeile berücksichtigt die o.a. Anforderungen:
+Die folgenden [Kommandozeile][WEB001] berücksichtigt die o.a. Anforderungen:
 ```
  df -h /home | tail -1 | awk -F" " '{printf("ID: FSH17001, TIME: %s, Wert: %d, (%s), DF:%s\n", strftime("%y-%m-%d %H:%M:%S"), $5, $5, $6);}'
 ```
