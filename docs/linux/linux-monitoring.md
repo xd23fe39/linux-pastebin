@@ -11,6 +11,11 @@ und Präsentation relevanter Größen eines zu überwachenden Systems.
 
 #### Beschreibung des Ecosystems
 
+Im vorliegenden Fall wird davon ausgegangen, dass auf einem System das Betriebssystem 
+Linux installiert ist und die Benutzerverzeichnisse im Filesystem unter `/home` 
+abgelegt sind. Ein Administrator will sicherstellen, dass die Benutzer des Systems
+immer genügend Speicherplatz unter `/home` vorfinden.
+
 Die Auslastung oder Belegung eines Filesystems kann mittels Kommandozeile und dem Befehl `df` 
 auf den meisten Unix-Systemen angezeigt werden.
 ```
