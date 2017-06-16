@@ -5,6 +5,13 @@
 Der Begriff **Monitoring** ist ein Überbegriff für die systematische Beobachtung, Messung, Protokollierung
 und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökosystems. 
 
+### Definitionen
+
+[WEB002]: https://www.klipfolio.com/resources/kpi-examples#types-of-kpis
+
+- Key Performance Indicators (KPIs) [[1][WEB002]]
+- Service Level Agreements (SLAs)
+
 ## Praxisbeispiele
 
 ### Überwachung der Auslastung von Filesystem `/home`
