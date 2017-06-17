@@ -1,5 +1,6 @@
 # .gitignore
 # Mardown-Helper
+pdf/*
 html/*
 res/*
 *.pdf
