@@ -8,10 +8,14 @@ und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökos
 ### Definitionen
 
 [WEB002]: https://www.klipfolio.com/resources/kpi-examples#types-of-kpis
+[WEB003]: https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)
+[WEB004]: http://www.elektronik-kompendium.de/sites/net/0503281.htm
 
 - Key Performance Indicators (KPIs) [[1][WEB002]]
 - Service Level Agreements (SLAs)
 - Configuration Items (CIs)
+
+CIs können sein Business Services, Workstations, Servers, Network Components oder Documents. Zur Strukturierung der CIs muss eine geeignete Topologie [3][WEB003] [4][WEB004] gewält werden, wie z.B. Lokalisation, Standort, Organisation, Bereich, Interne Services, SLAs etc.  
 
 ## Praxisbeispiele
 
