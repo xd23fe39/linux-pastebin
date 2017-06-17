@@ -11,6 +11,7 @@ und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökos
 
 - Key Performance Indicators (KPIs) [[1][WEB002]]
 - Service Level Agreements (SLAs)
+- Configuration Items (CIs)
 
 ## Praxisbeispiele
 
