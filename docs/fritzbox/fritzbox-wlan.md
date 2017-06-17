@@ -1,5 +1,22 @@
 # FritzBox Wireless LAN Konfiguration
 
+## Zugriff auf die Fritzbox
+
+Die folgende URL öffnet im Browser die Webkonsole der Fritzbox:
+
+- https://fritz.box/
+
+## Anmelden an der Webkonsole
+
+Die Konfiguration des Zugriffsschutzes auf die Webkonole der Fritzbox findet man im `System`-Menü unter `Fritz!Box-Benutzer` auf der Karteikarte `Anmeldung im Heimnetz`:
+
+Anmeldung im Heimnetz:
+```
+Anmeldung mit dem FRITZ!Box-Kennwort
+```
+
+Sollen mehrere Personen Zugriff auf die Konfiguration der Fritzbox erhalten, muss die Einstellung `Anmeldung mit FRITZ!Box-Benutzernamen und Kennwort` aktiviert werden.
+
 ## WLAN Einstellungen
 
 #### Funknetz-Infoblatt drucken
@@ -10,7 +27,7 @@ Es muss damit grechnet werden, dass manche Geräte ihre Verbindungsdaten *verlie
 
 #### Name des WLAN-Funknetzes (SSID)
 ```
-XRAY175
+WLAN175
 ```
 Es sollten hier niemals der Modellname des Routers, der Familienname o.ä. Bezeichner
 verwendet werden.
@@ -47,10 +64,10 @@ WPA2 (CCMP)
 ```
 M5w6gjaPk9cV
 ```
-Nur exemplarisch z.B. über [Passwort Generator][WEB002] erstellt! 
+Nur exemplarisch z.B. über [Passwort Generator][WEB002] erstellt!
 
 Der WLAN-Netzwerkschlüssel muss auf allen Geräten, die sich mit
-mit dem WLAN Verbinden wollen, eingegeben werden. Dies sollte 
+mit dem WLAN Verbinden wollen, eingegeben werden. Dies sollte
 man bei der Vergabe des Netzwerkschlüssels immer berücksichtigen.
 
 Eine Mindestlänge von 8 Zeichen wird empfohlen.
