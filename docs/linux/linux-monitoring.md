@@ -5,7 +5,7 @@
 Der Begriff **Monitoring** ist ein Überbegriff für die systematische Beobachtung, Messung, Protokollierung
 und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökosystems. 
 
-### Definitionen
+### Messgrößen
 
 [WEB002]: https://www.klipfolio.com/resources/kpi-examples#types-of-kpis
 [WEB003]: https://de.wikipedia.org/wiki/Topologie_(Rechnernetz)
