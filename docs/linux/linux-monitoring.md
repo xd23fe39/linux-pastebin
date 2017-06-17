@@ -15,7 +15,7 @@ und Präsentation relevanter Größen eines zu überwachenden Systems oder Ökos
 - Service Level Agreements (SLAs)
 - Configuration Items (CIs)
 
-CIs können sein Business Services, Workstations, Servers, Network Components oder Documents. Zur Strukturierung der CIs muss eine geeignete Topologie [3][WEB003] [4][WEB004] gewält werden, wie z.B. Lokalisation, Standort, Organisation, Bereich, Interne Services, SLAs etc.  
+CIs können sein Business Services, Workstations, Servers, Network Components oder Documents. Zur Strukturierung der CIs muss eine geeignete Topologie [[3][WEB003]] [[4][WEB004]] gewält werden, wie z.B. Lokalisation, Standort, Organisation, Bereich, Interne Services, SLAs etc.  
 
 ## Praxisbeispiele
 
