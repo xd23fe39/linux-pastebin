@@ -18,7 +18,7 @@ basename | chroot | date | dirname | du | echo | env | expr | factor | false | g
 
 #### Netzwerk
 
-arp | ifconfig | iwconfig | man interfaces | netstat | ping | tcpdump | telnet | traceroute | 
+arp | ifconfig | iwconfig | man interfaces | netstat | nc | ping | tcpdump | telnet | traceroute | 
 
 ## Beispiel
 
