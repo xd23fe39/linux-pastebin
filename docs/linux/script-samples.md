@@ -29,7 +29,7 @@ do
   sleep 2
 done
 
-# Exotcode ($?)
+# Exitcode ($?)
 exit 0
 ```
 
