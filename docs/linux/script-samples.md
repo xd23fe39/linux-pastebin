@@ -6,7 +6,7 @@
 #!/usr/bin/env bash
 # Script starts with the Shebang '#!' definition
 
-echo "Hello script on `dirname $0`!"
+echo "Hello script: $0"
 ```
 
 ## Beispiel
