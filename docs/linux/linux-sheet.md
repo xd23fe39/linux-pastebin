@@ -10,7 +10,7 @@ chgrp | chown | chmod | cp | dd | dir | dircolors | install | ln | ls | mkdir | 
 
 #### Filesystem
 
-blkid -o list | df | mount | umount | fdisk | /etc/fstab | /dev/disk/by-uuid/ 
+blkid -o list | df | mount | umount | fdisk | /etc/fstab | /dev/disk/by-uuid/
 
 #### Text 	
 
@@ -22,5 +22,13 @@ basename | chroot | date | dirname | du | echo | env | expr | factor | false | g
 
 #### Netzwerk
 
-arp | ifconfig | iwconfig | man interfaces | netstat | nc | ping | tcpdump | telnet | traceroute | 
+arp | ifconfig | iwconfig | man interfaces | netstat | nc | ping | tcpdump | telnet | traceroute |
 
+#### SSL
+
+openssl | /etc/ssl/certs/ | /etc/ssl/private/ | /etc/ssl/openssl.cnf
+
+```
+openssl s_client -connect google.com:443
+sudo openssl genrsa -out /etc/ssl/private/server.key
+```
