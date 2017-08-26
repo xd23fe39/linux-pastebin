@@ -8,6 +8,30 @@
 
 echo "Hello script: $0"
 ```
+## 
+
+```
+#!/usr/bin/bash
+#
+# Prüft alle 2 Sekunden die Verbindungen zu Host $1 mit Ausgabe auf stdout
+
+# Funktion mit Parameter $1 (Hostname oder IP-Adresse)
+function check_connection {
+  echo -n "  * "
+  echo -n "`netstat -na | grep ${1}`"
+  echo " - ${1} "
+}
+
+# Schleife/Loop
+while [ true ]
+do
+  check_connection ${1}
+  sleep 2
+done
+
+# Exotcode ($?)
+exit 0
+```
 
 ## Beispiel
 
