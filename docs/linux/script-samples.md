@@ -1,5 +1,14 @@
 # Script Samples
 
+## Ein einfaches 'Hallo'-Script
+
+```
+#!/usr/bin/env bash
+# Script starts with the Shebang '#!' definition
+
+echo "Hello script on `dirname $0`!"
+```
+
 ## Beispiel
 
 ```
