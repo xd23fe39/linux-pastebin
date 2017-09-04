@@ -1,8 +1,8 @@
 # Linux Command Sheet
 
-#### Prozesse
+#### Prozesse und CPU
 
-iostat | ps | top | vmstat
+iostat | ps | top | vmstat | /proc/cpuinfo
 
 #### Dateien 	
 
@@ -27,8 +27,3 @@ arp | ifconfig | iwconfig | man interfaces | netstat | nc | ping | tcpdump | tel
 #### SSL
 
 openssl | /etc/ssl/certs/ | /etc/ssl/private/ | /etc/ssl/openssl.cnf
-
-```
-openssl s_client -connect google.com:443
-sudo openssl genrsa -out /etc/ssl/private/server.key
-```
