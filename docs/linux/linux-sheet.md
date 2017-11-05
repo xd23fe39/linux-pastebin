@@ -10,7 +10,7 @@ chgrp | chown | chmod | cp | dd | dir | dircolors | install | ln | ls | mkdir | 
 
 #### Filesystem
 
-blkid -o list | df | mount | umount | fdisk | /etc/fstab | /dev/disk/by-uuid/
+blkid -o list | df | lsblk | mount | umount | fdisk | /etc/fstab | /dev/disk/by-uuid/
 
 #### Text 	
 
