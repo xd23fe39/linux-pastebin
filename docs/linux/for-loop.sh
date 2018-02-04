@@ -6,3 +6,6 @@ for datei in *.txt
 do
    echo $datei
 done
+
+# Quelle:
+# http://www.tldp.org/LDP/abs/html/arrays.html
