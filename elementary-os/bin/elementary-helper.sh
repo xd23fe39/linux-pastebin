@@ -21,9 +21,9 @@ function elementary_output() {
 
 function elementary_syslog() {
     if [ "$2" == "--errors" ]; then
-        dmesg | -i "error"
+        dmesg | grep -i "error"
     else
-        dmesg
+        dmesg 
     fi
 }
 
@@ -36,4 +36,4 @@ function elementary_() {
 echo; echo "BUILD: `uname -a`"; echo
 
 # MAIN: Aufruf von Kommando-Modul ${1}
-elementary_${1} $@ | tee ${PWD}/elementary-helper.out
+elementary_${1} $@
