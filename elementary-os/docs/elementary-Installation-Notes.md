@@ -17,6 +17,14 @@ Neue Paketquellen hinzufügen
 
 Leider fehlt das Kommandozeilentool `add-apt-repository` und muss nachinstalliert werden, um zusätzliche Paketquellen z.B. für die Installation des Editors `atom` hinzufügen zu können.
 
+Prüfen, ob installiert:
+
+```shell
+sudo apt search software-properties-common
+```
+
+Installieren:
+
 ```shell
 sudo apt install software-properties-common
 sudo apt-get update
