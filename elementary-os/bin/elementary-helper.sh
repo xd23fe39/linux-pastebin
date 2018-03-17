@@ -11,6 +11,10 @@ BUILD="./BUILD"
 TEST="./TEST"
 CCD="cd $PWD"
 
+function elementary_update() {
+    sudo apt update -y && sudo apt upgrade
+}
+
 function elementary_name() {
 	echo; uname -a; echo; echo "${RELEASE}"; echo
 }
