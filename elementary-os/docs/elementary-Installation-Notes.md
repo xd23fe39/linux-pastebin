@@ -15,7 +15,7 @@ Dieses Dokument wurde als [Markdown][3]-Dokument verfasst und kann mit allen Tex
 Neue Paketquellen hinzufügen
 ----------------------------
 
-Leider fehlt das Kommandozeilentool `add-apt-repository` und muss nachinstalliert werden, um zusätzliche Paketquellen z.B. für die Installation des Editors `atom` hinzufügen zu können.
+Fehlt das Kommandozeilentool `add-apt-repository`, dann sollte es direkt nachinstalliert werden, um spter zusätzliche Paketquellen (PPA-Repositories) z.B. für die Installation des Editors `atom` hinzufügen zu können.
 
 Prüfen, ob installiert:
 
@@ -68,4 +68,42 @@ Zum "Aufwecken" meines FreeNAS Servers aus dem Standby:
 
 ```shell
 sudo apt install wakeonlan
+```
+
+Installation weiterer Anwendungen
+---------------------------------
+
+Anwendungen basierend auf dem `electronjs`-Framework:
+
+- <https://electronjs.org/>
+
+Startmedium-Ersteller (essentiell):
+
+- <https://etcher.io/>
+
+- Etcher kann auch über den Paketmanager `apt` installiert werden:
+
+```sh
+sudo apt install etcher-electron
+```
+
+Stacer System Monitor und Optimierer:
+
+- Installation von `stacer` über PPA-Repository (Ubuntu):
+
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer
+sudo apt-get update
+sudo apt-get install stacer
+```
+
+Nextcloud Desktop-Client für die Private-Cloud:
+
+- Homepage: <https://nextcloud.com/install/>
+- Installation über PPA-Repository:
+
+```sh
+sudo add-apt-repository ppa:nextcloud-devs/client
+sudo apt-get update
+sudo apt-get nextcloud-client
 ```
