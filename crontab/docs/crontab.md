@@ -11,8 +11,14 @@ crontab -e
 
 ## Beispiel für einen `crontab`-Eintrag
 
-```
+```sh
 35   2   * * 1-5    /home/user/bin/job.sh >> /dev/null 2>&1
+```
+
+## Start script every reboot (Linux)
+
+```sh
+@reboot     /home/me/myscript.sh
 ```
 
 Skript wird ausgeführt Mo-Fr, 02:35 Uhr:
