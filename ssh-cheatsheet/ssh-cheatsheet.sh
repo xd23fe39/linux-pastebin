@@ -15,6 +15,7 @@ ssh-keyscan                 # List SSH-Keys of a remote host
 
 $HOME/.ssh/id_rsa           # Users personal SSH key
 $HOME/.ssh/known_hosts      # Stored known hosts
+/etc/ssh/ssh_config         # SSH server configuration
 
 # Einfache SSH Client Beispiele
 
