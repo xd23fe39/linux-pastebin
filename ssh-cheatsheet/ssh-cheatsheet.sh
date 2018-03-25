@@ -13,8 +13,9 @@ ssh-copy-id                 # Copy SSH-Key to remote host user
 ssh-keygen                  # Create a personal SSH-Key
 ssh-keyscan                 # List SSH-Keys of a remote host
 
-$HOME/.ssh/id_rsa           # Users personal SSH key
-$HOME/.ssh/known_hosts      # Stored known hosts
+~/.ssh/id_rsa               # Users personal SSH key
+~/.ssh/known_hosts          # Stored known hosts
+~/.ssh/config               # OpenSSH SSH client configuration files
 /etc/ssh/ssh_config         # OpenSSH SSH client configuration files
 
 # Einfache SSH Client Beispiele
