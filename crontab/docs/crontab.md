@@ -1,13 +1,15 @@
-# Crontab
+# Crontab Technote (Linux)
 
 ## Beschreibung
 
-Kommt es bei der Ausführung von Skripten via `crontab` zu Problemen, sind häufig fehlerhafte oder nicht gesetzte Umgebungsvariablen die Ursache.
+Anlisten oder editieren der `crontab` des aktuellen Users:
 
+```sh
+crontab -l          # List crontab of current user
+crontab -e          # Edit crontab of current user
 ```
-crontab -l
-crontab -e
-```
+
+Nutze `man crontab` für weitere Informationen.
 
 ## Beispiel für einen `crontab`-Eintrag
 
@@ -17,13 +19,15 @@ Skript wird ausgeführt Mo-Fr, 02:35 Uhr:
 35   2   * * 1-5    /home/user/bin/job.sh >> /dev/null 2>&1
 ```
 
-## Start script every reboot (Linux)
+## Starte Script bei jedem Reboot
 
 ```sh
 @reboot     /home/me/myscript.sh
 ```
 
 ## Umgebungsvariablen für `crontab`
+
+Kommt es bei der Ausführung von Skripten via `crontab` zu Problemen, sind häufig fehlerhafte oder nicht gesetzte Umgebungsvariablen die Ursache.
 
 Die aktuellen Umgebungsvariablen kann man sich mit `env` oder `set` anzeigen lassen und in die crontab übernehmen. Ein kleines Skript dazu könnte folgendermaßen aussehen:
 
