@@ -16,7 +16,15 @@ Nutze `man crontab` für weitere Informationen.
 Skript wird ausgeführt Mo-Fr, 02:35 Uhr:
 
 ```sh
-35   2   * * 1-5    /home/user/bin/job.sh >> /dev/null 2>&1
+# min hour dom mon dow  dom=Day of Month (1-31); dow=Day of week (0-7, 0=7=sun)
+35   2   *  *  1-5    /home/user/bin/job.sh >> /dev/null 2>&1
+```
+
+Skript wird alle 5 Minuten ausgeführt:
+
+```sh
+# min hour dom mon dow  dom=Day of Month (1-31); dow=Day of week (0-7, 0=7=sun)
+*/5   *   *  *  1-5    /home/user/bin/job.sh >> /dev/null 2>&1
 ```
 
 ## Starte Script bei jedem Reboot
