@@ -15,6 +15,7 @@ function oper_help() {
 function oper_head() {
     echo "#!"$(which bash)
     echo "# Build:" $(uname -n -m -r -o) "$USER@$HOSTNAME"
+    echo "# min hour dom mon dow  dom=Day of Month (1-31); dow=Day of week (0-7, 0=7=sun)"
     echo
 }
 
