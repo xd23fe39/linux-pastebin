@@ -30,6 +30,17 @@ echo "password" >.secret
 chmod 600 .secret
 ```
 
+Oder:
+
+```sh
+UUID=$(uuidgen)
+echo "KEY:$UUID" > ./.key
+sha256sum .key > .secret
+chmod 400 .key .secret
+# Check
+sha256sum --check .secret
+```
+
 ## Dateien verschlüsseln mit `openssl enc -e -aes256`
 
 ```bash
@@ -41,7 +52,7 @@ openssl enc -d -aes256 -in geheim.txt.enc
 
 Verwendung des Passwortes aus der Passwortdatei `.secret`:
 ```bash
-pass="`cat .secret`"
+pass=$(cat .secret | awk '{print $1}')
 openssl enc -e -aes256 -in data/geheim.txt -out geheim.txt.enc -pass pass:"${pass}"
 ```
 

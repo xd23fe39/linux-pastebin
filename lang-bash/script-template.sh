@@ -5,6 +5,7 @@ SHELL=$(which bash)
 RELEASE=$(awk -F " " '{print $1 " " $2 " " $3 " " $4}' /etc/issue)
 UNAME=$(uname -n -s -r -i)
 PWD=$(pwd)
+UUID=$(uuidgen)
 PROGNAME=$0
 
 # Script macros
