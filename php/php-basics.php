@@ -1,4 +1,5 @@
 <?php
+exit(0);
 
 // Simple
 $num = 5
@@ -20,5 +21,19 @@ for ($i = 0; $i < $cnt; $i++) echo "$i\n";
 foreach ($arr as $num) { echo "$num\n"; }
 foreach ($argv as $opt) { echo "$opt\n"; }
 
+// Switch
+switch ($in) {
+    case "a":
+        echo "c";
+        break;
+    case "b":
+        echo "b";
+        break;
+    case "c":
+        echo "c";
+        break;
+  default:
+        break;
+}
 
 ?>
