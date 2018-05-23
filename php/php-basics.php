@@ -24,13 +24,10 @@ foreach ($argv as $opt) { echo "$opt\n"; }
 // Switch
 switch ($in) {
     case "a":
-        echo "c";
+        echo "first";
         break;
-    case "b":
-        echo "b";
-        break;
-    case "c":
-        echo "c";
+    case "b": case "c":
+        echo "other";
         break;
   default:
         break;
