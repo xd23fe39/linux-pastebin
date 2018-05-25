@@ -39,4 +39,31 @@ switch ($in) {
 
 function get_item($name = "name") { return $list[$name] };
 
+// MySQL Beispiel
+
+$mysql_server = "mysql_server";
+$mysql_database = "mysql_database";
+$mysql_user = "mysql_user";
+$mysql_password = "mysql_password";   			
+
+$mysql_link = mysql_connect(
+	$mysql_server, 
+	$mysql_user,
+	$mysql_password );
+
+if ( !$mysql_link )
+	die("HRSync: Datenbankverbindung konnte nicht hergestellt werden!");
+
+if ( !mysql_select_db($mysql_database, $mysql_link) )
+	die("HRSync: Datenbank konnte nicht selektiert werden!");
+
+if ( !$res = mysql_query($sql, $mysql_link))
+	die("Fehler bei SQL-Query $stmt_date (".mysql_errno()."): " . mysql_error());
+
+while ($row = mysql_fetch_assoc($res)) {
+	echo $row["fieldname"] . "\n";
+}
+
+mysql_close($mysql_link);
+
 ?>
