@@ -8,6 +8,9 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
+// Define-Konstanten
+if (!defined("PI") ) define("PI", 3.1415);
+
 // In das Verzeichnis des aktuellen Scriptes wechseln
 define("BASEDIR", dirname(__FILE__));
 chdir(BASEDIR);
@@ -51,33 +54,35 @@ switch ($in) {
 
 // Funktionen
 
+function umfang_kreis($durchmesser) {return $durchmesser * PI};
 function get_item($name = "name") { return $list[$name] };
 
 // MySQL Beispiel
+function load_mysql_data() { 
+	$mysql_server = "mysql_server";
+	$mysql_database = "mysql_database";
+	$mysql_user = "mysql_user";
+	$mysql_password = "mysql_password";   			
 
-$mysql_server = "mysql_server";
-$mysql_database = "mysql_database";
-$mysql_user = "mysql_user";
-$mysql_password = "mysql_password";   			
+	$mysql_link = mysql_connect(
+		$mysql_server, 
+		$mysql_user,
+		$mysql_password );
 
-$mysql_link = mysql_connect(
-	$mysql_server, 
-	$mysql_user,
-	$mysql_password );
+	if ( !$mysql_link )
+		die("HRSync: Datenbankverbindung konnte nicht hergestellt werden!");
 
-if ( !$mysql_link )
-	die("HRSync: Datenbankverbindung konnte nicht hergestellt werden!");
+	if ( !mysql_select_db($mysql_database, $mysql_link) )
+		die("HRSync: Datenbank konnte nicht selektiert werden!");
 
-if ( !mysql_select_db($mysql_database, $mysql_link) )
-	die("HRSync: Datenbank konnte nicht selektiert werden!");
+	if ( !$res = mysql_query($sql, $mysql_link))
+		die("Fehler bei SQL-Query $stmt_date (".mysql_errno()."): " . mysql_error());
 
-if ( !$res = mysql_query($sql, $mysql_link))
-	die("Fehler bei SQL-Query $stmt_date (".mysql_errno()."): " . mysql_error());
+	while ($row = mysql_fetch_assoc($res)) {
+		echo $row["fieldname"] . "\n";
+	}
 
-while ($row = mysql_fetch_assoc($res)) {
-	echo $row["fieldname"] . "\n";
+	mysql_close($mysql_link);
 }
-
-mysql_close($mysql_link);
 
 ?>
