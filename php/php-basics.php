@@ -1,6 +1,20 @@
 <?php
 exit(0);   // Beende mit Fehlercode 0
 
+// PHP Umgebung setzen (Wichtig für Kommandozeilen-Skripte)
+date_default_timezone_set("Europe/Berlin");
+ini_set('memory_limit', '-1');
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
+// In das Verzeichnis des aktuellen Scriptes wechseln
+define("BASEDIR", dirname(__FILE__));
+chdir(BASEDIR);
+
+// Importieren von Modulen oder Konfigurationsdateien
+require_once _BASE."/conf/myconf.conf";
+
 // Einfache Datentypen
 $num = 5                       // Ganzzahl int
 $float = 3.1415                // Fließkommazahl (float, double)
