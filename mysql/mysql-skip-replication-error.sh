@@ -6,7 +6,7 @@ SKIP=$3
 
 HOST=$(hostname -s)
 IP=$(hostname -i)
-CMD="mysql -u root -p $PASS -e"
+CMD="mysql --user=$USER --password=$PASS -e"
 
 if [ "$CHECKHOST" != "$HOST" ]; then
     echo; echo "Kein MySQL SLAVE!"; echo
