@@ -7,6 +7,7 @@ UNAME=$(uname -n -s -r -i)
 PWD=$(pwd)
 UUID=$(uuidgen)
 PROGNAME=$0
+SERVERTYPE=$(hostname -s | cut -c1-5)
 
 # Script macros
 LS="ls -l"
