@@ -1,4 +1,6 @@
 #!/bin/bash
+#
+# cmd a b c d e f g --p1 --p2
 
 # array=("${(@)array:#<element to remove>}")
 
