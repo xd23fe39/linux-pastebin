@@ -63,18 +63,17 @@ function getops() {
 ##
 ARGS=()
 ARGV=()
-let ARGN=0
 for ITEM in $@; do
-    # echo -n "$ITEM "
-    if [[ "$ITEM" == -* ]]; then
-        NAM=$(echo $ITEM | cut -d '=' -f 1)
-        VAL=$(echo $ITEM | cut -d '=' -f 2)
-        ARGS+="$NAM "
-        ARGV+="$VAL "
-        continue
-    fi
-    PARM+="$ITEM "
-    ARGN=$(( $ARGN + 1 ))
+  # echo -n "$ITEM "
+  if [[ "$ITEM" == -* ]]; then
+      NAM=$(echo $ITEM | cut -d '=' -f 1)
+      VAL=$(echo $ITEM | cut -d '=' -f 2)
+      ARGS+="$NAM "
+      ARGV+="$VAL "
+      ARGN=$(( $ARGN + 1 ))
+      continue
+  fi
+  PARM+="$ITEM "
 done
 #################################################################
 
@@ -92,7 +91,7 @@ if [ "$DEBUG" == "DEBUG" ]; then
   echo 
   echo FILTER=$FILTER
   echo ARGS=$ARGS
-  echo ARGN=$ARGS
+  echo ARGN=$ARGN
   echo OCNT=$OCNT
   echo PARM=$PARM
   echo
