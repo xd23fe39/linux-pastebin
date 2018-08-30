@@ -4,12 +4,12 @@
 
 DEBUG=""
 SCRIPT_DIR=$(dirname $0)       # Script-Verzeichnis
-SCRIPT_NAME=$(basename $0)       # Script-Verzeichnis
+SCRIPT_NAME=$(basename $0)     # Script-Name
 PWD=$(pwd)                     # Aktuelles Verzeichnis
 
-CLP=$@                # Verwandle in Array
-OCNT=${#@}            # Anzahl Elemente von Array merken
+OCNT=${#@}   # Anzahl Argumente beim Aufruf merken
 
+# Input file $HOME/conf/servers.conf
 INPUT_FILE="$HOME/conf/servers.conf"
 
 # Keine Newline pro Item ausgeben
@@ -27,12 +27,15 @@ function _usage() {
   echo 
   echo "  Options: --filter --ip[--short --cols] --help" 
   echo  
+  if [ "$1" == "exit" ]; then
+    exit 2
+  fi
 }
 
 function getops() {
   case $1 in
     --help|-h)
-      _usage
+      _usage "exit"
       ;;
     --debug|-d) 
       DEBUG="DEBUG"
@@ -50,7 +53,7 @@ function getops() {
       SHORT=
       ;;
     *)
-      _usage
+      _usage "exit"
       ;;
   esac    
 }
@@ -71,12 +74,12 @@ for ITEM in $@; do
         continue
     fi
     PARM+="$ITEM "
-    ARGN=$(( PCNT + 1 ))
+    ARGN=$(( $ARGN + 1 ))
 done
 #################################################################
 
 if [ $ARGN == 0 ]; then
-  _usage
+  _usage "exit"
 fi
 
 let PCNT=0
@@ -89,8 +92,8 @@ if [ "$DEBUG" == "DEBUG" ]; then
   echo 
   echo FILTER=$FILTER
   echo ARGS=$ARGS
+  echo ARGN=$ARGS
   echo OCNT=$OCNT
-  echo PCNT=$PCNT
   echo PARM=$PARM
   echo
 fi
