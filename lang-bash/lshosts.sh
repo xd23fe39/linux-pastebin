@@ -63,6 +63,7 @@ function getops() {
 ##
 ARGS=()
 ARGV=()
+let ARGN=0
 for ITEM in $@; do
   # echo -n "$ITEM "
   if [[ "$ITEM" == -* ]]; then
@@ -77,7 +78,7 @@ for ITEM in $@; do
 done
 #################################################################
 
-if [ $ARGN == 0 ]; then
+if [ "$ARGN" == "0" ]; then
   _usage "exit"
 fi
 
