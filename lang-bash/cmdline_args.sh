@@ -1,7 +1,17 @@
 #!/bin/bash
+#
+# Beispiel Usage:
+#
+#  ./sample.sh a b -c=22 -x=12 d e
+#
+# array=("${(@)array:#<element to remove>}")
 
-echo
-echo "Command Line Args parsen"
+CNT=${#@}         # Anzahl Elemente der Liste
+CLA=${@:1:3}      # Elemente 2 bis 3 in neue Liste schreiben
+CLR=${@:2:3}      # Elemente 2 bis 3 in neue Liste schreiben
+CLE=${@:2:$CNT}   # Elemente 2 bis Ende in neue Liste schreiben
+
+echo "Command Line Options and Parameter"
 echo
 
 echo
@@ -30,7 +40,7 @@ for ITEM in $@; do
         continue
     fi
     PARM+="$ITEM "
-    ARGN=$(( PCNT + 1 ))
+    ARGN=$(( ARGN + 1 ))
 done
 #################################################################
 echo
