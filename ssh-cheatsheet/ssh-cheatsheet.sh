@@ -27,3 +27,10 @@ ssh-keygen                  # to generaste a personal SSH-Key
 # Entferne Eintrag aus der known_hosts
 
 ssh-keygen -R "hostname"    # Remove host item from known_hosts
+
+# Tunneling
+ssh pi@raspberry              # angenommen, sie können sich auf dem Remoteserver anmelden
+                              # und dort läuft ein Webserver auf 443
+                              # dann lässt sich ein Tunnel dahin folgendermaßen aufbauen
+ssh -L 3000:localhost:443 pi@raspberry
+wget https://localhost:3000   # der Tunneleingang lautet localhost:3000 und endet auf raspberry:443
