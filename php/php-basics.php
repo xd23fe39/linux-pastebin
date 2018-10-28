@@ -19,10 +19,10 @@ chdir(BASEDIR);
 require_once _BASE."/conf/myconf.conf";
 
 // Einfache Datentypen
-$num = 5                       // Ganzzahl int
-$float = 3.1415                // Fließkommazahl (float, double)
-$str = "This is $name\n";      // Zeichenkette
-$lit = 'This is text';         // Zeichenliteral 
+$num = 5;                       // Ganzzahl int
+$float = 3.1415;                // Fließkommazahl (float, double)
+$str = "This is $name\n";       // Zeichenkette
+$lit = 'This is text';          // Zeichenliteral 
 
 // IF-Bedingungen ==, !=, >, <, <=, >=, &&, ||
 if ($a == $b) echo "equal"; else echo "not-equal";
@@ -54,8 +54,8 @@ switch ($in) {
 
 // Funktionen
 
-function umfang_kreis($durchmesser) {return $durchmesser * PI};
-function get_item($name = "name") { return $list[$name] };
+function umfang_kreis($durchmesser) {return $durchmesser * PI; };
+function get_item($name = "name") { return $list[$name]; };
 
 // MySQL Beispiel
 function load_mysql_data() { 

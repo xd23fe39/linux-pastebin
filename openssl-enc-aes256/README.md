@@ -26,8 +26,10 @@ Achtung: Konfigurationsdateien oder Kennwortdateien dürfen niemals in Versionsk
 
 Kennwortdatei anlegen und ausschließlich für einen Benutzer lesbar anlegen:
 ```bash
-echo "password" >.secret
+touch .secret
 chmod 600 .secret
+echo "password" >.secret
+chmod 400 .secret
 ```
 
 Oder:
