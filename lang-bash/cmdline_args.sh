@@ -18,7 +18,6 @@ echo
 echo "Kommandozeilenparameter:"
 echo "---"
 echo $@
-echo "Counter: $(#@)"
 echo "---"
 echo
 
@@ -48,13 +47,6 @@ echo
 echo
 echo "ARGS-Loop:"
 for ITEM in "$ARGS"; do
-    echo -n "$ITEM "
-done
-echo 
-
-echo
-echo "ARGV-Loop:"
-for ITEM in "$ARGV"; do
     echo -n "$ITEM "
 done
 echo 
