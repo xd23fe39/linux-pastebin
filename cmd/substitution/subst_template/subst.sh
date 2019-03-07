@@ -4,7 +4,7 @@
 # Module: empty.sh
 
 # Parameter File
-PARMFILE=data.txt
+PARMLIST=data.txt
 
 # Template String mit {1}-Platzhalter
 TEMPLATE="THIS IS THE {1} OUTPUT!"
@@ -49,11 +49,11 @@ _main() {
     echo "==="
     echo "BASEDIR: ${BASEDIR}"
     echo "TEMPLATE: ${TEMPLATE}"
-    echo "PARMFILE: ${PARMFILE}"
+    echo "PARMLIST: ${PARMLIST}"
     echo "SELECTOR: ${SELECTOR}"
     echo "${BSHFILE}"
     echo "==="
-    for i in $(cat $PARMFILE); do 
+    for i in $(cat $PARMLIST); do 
         echo -n $i ": "
         if [[ $i =~ $SELECTOR ]]; then
             echo -n $i

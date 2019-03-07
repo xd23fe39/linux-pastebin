@@ -7,7 +7,8 @@ Bookmark-Sammlung.
 Bash:
 
 - [Bash CheatSheet](https://gist.github.com/LeCoupa/122b12050f5fb267e75f)
-
+- [Linux.die.net](https://linux.die.net/man/1/bash)
+ 
 Python:
 
 - [Python Sheets](https://www.pythonsheets.com/)
