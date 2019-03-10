@@ -85,4 +85,3 @@ function load_mysql_data() {
 	mysql_close($mysql_link);
 }
 
-?>
