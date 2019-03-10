@@ -29,6 +29,8 @@ source ${BSHFILE} include_once
 
 # Substituiere Platzhalter in Template String
 #
+# Aufruf: _subst "$TEMPLATE" "$WERT"
+#
 # $1: Template String mit {1}-Platzhalter
 # $2: Wert für Platzhalter
 #
