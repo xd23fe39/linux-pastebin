@@ -2,12 +2,6 @@
 
 Eine Sammlung von Ideen, Best Practices, Scripten u.a.
 
-## Klonen 
-
-```sh
-git clone https://github.com/xd23fe39/linux-pastebin.git
-```
-
 ## Nutzungsbestimmungen und Haftungsausschluss
 
 - [Lizenzinformation](LICENSE.txt)
