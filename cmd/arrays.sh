@@ -1,13 +1,19 @@
-CNT=${#@}         # Anzahl Elemente der Liste
-CLA=${@:1:3}      # Elemente 2 bis 3 in neue Liste schreiben
-CLR=${@:2:3}      # Elemente 2 bis 3 in neue Liste schreiben
-CLE=${@:2:$CNT}   # Elemente 2 bis Ende in neue Liste schreiben
 
-echo
-echo "ALL: $@"
-echo "CLA: $CLA"
-echo "CNT: $CNT"
+# Einfaches Array
+ZAHLEN=(0 1 2 3 4 5 6 7 8 9)
 
-echo
-echo "  Usage: array.sh A B C D E F G"
-echo
+# Alle Elemente eines Arrays anzeigen
+echo ${ZAHLEN[*]}
+
+# Anzeigen des 5. Elements (beginnt bei null)
+echo ${ZAHLEN[5]}
+
+# Element eines Arrays einen Wert zuweisen
+ZAHLEN[5]=five
+
+# Anzahl der Einträge eines Arrays
+echo ${#ZAHLEN[*]}
+
+# Neues Array mit den 5 Elementen ab Position 2 aus altem Array bilden 
+echo ${ZAHLEN[*]:2:5}
+
