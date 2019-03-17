@@ -25,8 +25,10 @@ ssh -X user@remote-host     # SSH with X-Forwarding
 ssh-keygen                  # to generaste a personal SSH-Key
 
 # Entferne Eintrag aus der known_hosts
+# Warning: the ECDSA host key for xxx differs from the key for the IP address yyy
 
 ssh-keygen -R "hostname"    # Remove host item from known_hosts
+ssh-keygen -R "ip-address"  # Remove host item based on the IP address 
 
 # Tunneling
 ssh pi@raspberry              # angenommen, sie können sich auf dem Remoteserver anmelden
