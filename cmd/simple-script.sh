@@ -12,13 +12,13 @@ source etc/sample.conf
 
 function _usage() {
     echo "
-    HRSYNC Cleanup Tool - Aufräumen verwaister Datensätze.
+    Simple Script - ein einfaches Bash Script
 
     Aufruf: $(basename $0) command args
 
     Commands:
     --help|-h   Anzeige dieser Information
-    --show|-s   Zeige Personenstammsatz mit Personalnummer x
+    show|-s     Zeige Datensatz mit Key x
     "
 }
 
