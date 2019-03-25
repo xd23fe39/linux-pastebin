@@ -14,7 +14,7 @@ blkid -o list | df | lsblk | mount | umount | fdisk | /etc/fstab | /dev/disk/by-
 
 #### Text 	
 
-cat | cksum | comm | csplit | cut | expand | fmt | fold | head | join | md5sum | nl | od | paste | ptx | pr | sha1sum | sort | split | sum | tac | tail | tr | tsort | unexpand | uniq | wc
+cat | cksum | comm | csplit | cut | expand | fmt | fold | head | join | md5sum | nl | od | paste | ptx | pr | sha1sum | sort | split | sum | tac | tail | tr | tsort | uuidgen | unexpand | uniq | wc
 
 #### Shell 	
 
