@@ -39,6 +39,11 @@ function _show() {
     mysql -u root --password=$PASS iuam -e "$select $filter $limit;"
 }
 
+# Anzeigen der Usage-Meldung, wenn keine Argumente angegeben sind
+if [ ${#@} == 0 ]; then
+    _usage; exit 0
+fi
+
 COMMAND=
 ARGS=()
 for parm in $@; do
