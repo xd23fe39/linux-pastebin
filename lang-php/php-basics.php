@@ -1,4 +1,6 @@
 <?php
+
+printf("\nPASTEBIN-File: nicht ausführbar! %s\n\n", __FILE__);
 exit(0);   // Beende mit Fehlercode 0
 
 // PHP Umgebung setzen (Wichtig für Kommandozeilen-Skripte)
