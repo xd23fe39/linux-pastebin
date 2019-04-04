@@ -9,6 +9,8 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE);
 define("BASEDIR", dirname(__FILE__));
 chdir(BASEDIR);
 
+$dtstamp = date("Y-m-d H:i:s");
+
 // Vollständiger Dateiname
 $tempfile = BASEDIR . "/tempfile.dat";
 
@@ -24,7 +26,8 @@ if (file_exists($tempfile)) {
 // Erzeuge Datei und schreibe Datensätze
 if ($filehandle = fopen($tempfile, 'w+')) {
     for ($i=0; $i < 100; $i++) { 
-        fwrite($filehandle, "Write a new Line $i into the file.\n");
+        fwrite($filehandle, 
+            sprintf("%d | %s | Dummy record number $i.\n", $i, $dtstamp));
     }
     fclose($filehandle);
 }
@@ -35,7 +38,7 @@ else
 if ($filehandle = fopen($tempfile, 'r')) {
     $n = 1;
     while ( $line = fgets($filehandle) ) {
-        printf("%5d: %s", $n++, $line);
+        printf("%5d : %s", $n++, $line);
     }
     fclose($filehandle);
 }
