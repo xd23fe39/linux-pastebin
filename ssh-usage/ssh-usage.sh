@@ -25,12 +25,20 @@ ssh -X user@remote-host     # SSH with X-Forwarding
 ssh-keygen                  # to generaste a personal SSH-Key
 
 # Entferne Eintrag aus der known_hosts
+# Warning: the ECDSA host key for xxx differs from the key for the IP address yyy
 
 ssh-keygen -R "hostname"    # Remove host item from known_hosts
+ssh-keygen -R "ip-address"  # Remove host item based on the IP address 
 
-# Tunneling
+# Tunneling using SSH
+# See also: https://www.ssh.com/ssh/tunneling/
+
 ssh pi@raspberry              # angenommen, sie können sich auf dem Remoteserver anmelden
-                              # und dort läuft ein Webserver auf 443
-                              # dann lässt sich ein Tunnel dahin folgendermaßen aufbauen
-ssh -L 3000:localhost:443 pi@raspberry
-wget https://localhost:3000   # der Tunneleingang lautet localhost:3000 und endet auf raspberry:443
+
+                              # Auf raspberry läuft ein Webserver auf Port 443 
+                              # Der Tunneleingang soll Port 3000 auf localhost lauten 
+                              # dann lässt sich ein Tunnel dahin folgendermaßen aufbauen:
+
+ssh -L 3000:localhost:443 pi@raspberry  
+
+wget https://localhost:3000   # Nutzen kann man den Tunnel dann via localhost:3000
