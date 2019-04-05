@@ -1,5 +1,9 @@
 <?php
 
+require_once 'php-mylib.php';
+
+PHP_MYLIB::init();
+
 abstract class pflanze {
     public function __construct()
     {
@@ -22,6 +26,9 @@ class fuchsia extends pflanze {
 }
      
 new fuchsia;
+
+print("\nCurrent time: "); PHP_MYLIB::printCurrentTime(); print("\n");
+printf("\nStarted at: %s", PHP_MYLIB::getRuntimeStart()); print("\n");
 
 // Cannot instantiate abstract class pflanze
 // new pflanze;
