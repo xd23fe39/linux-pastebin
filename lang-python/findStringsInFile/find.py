@@ -1,6 +1,5 @@
 # Python Hilfsscript für die Zeichenkettenzerlegung
 #
-# C:\Users\xcb3504\AppData\Local\Programs\Python\Python36-32\python.exe
 
 # Teilzeichenkette für Suche (Wortanfang)
 SEARCH_PATTERN = "XXXX"
