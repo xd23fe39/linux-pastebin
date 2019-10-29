@@ -2,4 +2,4 @@
 
 ## Links
 
-- [https://linux.die.net/man/5/ldap.conf]
+- <https://linux.die.net/man/5/ldap.conf>
