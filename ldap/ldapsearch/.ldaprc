@@ -1,0 +1,9 @@
+# ~/-ldaprc
+# https://linux.die.net/man/5/ldap.conf
+
+# The server certificate is requested. If no certificate is provided, the session proceeds normally.
+# If a bad certificate is provided, it will be ignored and the session proceeds normally.
+TLS_REQCERT allow
+
+# Specifies the path of a directory that contains Certificate Authority certificates in separate individual files.
+TLS_CACERTDIR /var/ldap/certs
