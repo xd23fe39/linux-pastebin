@@ -1,6 +1,6 @@
 # CSV Parser
 
-In Aufbau
+Einfaches Beispiel zum Laden und Verarbeiten von CSV-Daten mit Python.
 
 ## Umgang mit Datentabellen
 
@@ -10,7 +10,7 @@ Datensatz in der Datei:
 "123457","frank","Frank Mustermann","id=6541643658910559107,ou=roles,ou=company,ou=de|id=6541643658910559104,ou=roles,ou=company,ou=de"
 ```
 
-Datensatz in den Speicher (hier: Variable `ret`) laden:
+Datensatz in ein Array laden (hier: Variable `ret`):
 
     ret[row['uid']] = { 'UID' : row['uid'] , 'NAME' : row['cn'] , 'ROLES' : row['erroles'] } 
   
@@ -33,3 +33,4 @@ for key,person in personcache.items():
 ## Links
 
 - <https://docs.python.org/3/library/csv.html>
+- <https://docs.python.org/3/tutorial/datastructures.html>
