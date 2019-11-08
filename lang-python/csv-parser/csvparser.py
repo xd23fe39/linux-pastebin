@@ -1,10 +1,9 @@
 # Python Script: csvparser.py
-# 2011 by xd23fe39
+#
 
 import re       # Regular Expressions
 import csv      # CSV DictReader
-from collections import defaultdict
-from csv import DictReader
+# import collections 
 
 # Filenames
 PEOPLE_FILE="people.csv"
