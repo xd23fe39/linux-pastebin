@@ -1,5 +1,5 @@
 employeenumber,uid,cn,erroles
 "123456","sven","Sven Mustermann","id=6541643658910559104,ou=roles,ou=company,ou=de"
-"123456","frank","Frank Mustermann","id=6541643658910559107,ou=roles,ou=company,ou=de|id=6541643658910559104,ou=roles,ou=company,ou=de"
-"123456","thomas","Thomas Mustermann","id=6541643658910559105,ou=roles,ou=company,ou=de"
-"123456","peter","Peter Mustermann","id=6541643658910559105,ou=roles,ou=company,ou=de|id=6541643658910559107,ou=roles,ou=company,ou=de"
+"123457","frank","Frank Mustermann","id=6541643658910559107,ou=roles,ou=company,ou=de|id=6541643658910559104,ou=roles,ou=company,ou=de"
+"123458","thomas","Thomas Mustermann","id=6541643658910559105,ou=roles,ou=company,ou=de"
+"123459","peter","Peter Mustermann","id=6541643658910559105,ou=roles,ou=company,ou=de|id=6541643658910559107,ou=roles,ou=company,ou=de"
