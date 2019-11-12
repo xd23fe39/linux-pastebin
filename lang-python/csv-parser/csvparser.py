@@ -74,6 +74,23 @@ def print_all(personcache, rolecache):
     return 0
 
 ###########################################################
+## Write to file
+
+def print_to_file(filename, str):
+    fh = open(filename, "a+")
+    fh.write(str + "\n")
+    fh.close()
+
+def print_cache_to_file(filename, cache):
+    fh = open(filename, "w")
+    for key, item in cache.items():
+        fh.write(key)
+        for name, value in item.items():
+            fh.write(";" + name + "=" + value)
+        fh.write("\n")
+    fh.close()
+
+###########################################################
 ## MAIN
 
 print("CSVPARSER Sample Script, Version 19.11.001")
@@ -94,4 +111,9 @@ print_role_membership(CACHE_PEOPLE['frank'], CACHE_ROLES)
 
 print ("\nSTEP 05: Role membership for all people")
 print_all(CACHE_PEOPLE, CACHE_ROLES)
+
+print ("\nSTEP 06: Write to file demo")
+print_cache_to_file("output.txt", CACHE_PEOPLE)
+
+print ("\nEND: OK")
 
