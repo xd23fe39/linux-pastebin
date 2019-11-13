@@ -10,4 +10,4 @@ os, sys, os.system, sys.argv
 
 Aktueller Projektordner für Entwicklung:
 
-- `${ITIM51}\Sandbox\Python\exec-power`
+- `linux-pastebin/lang-python/exec-power`
