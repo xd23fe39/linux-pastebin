@@ -31,15 +31,13 @@ if __name__ == "__main__":
 print("Current working directory: {:s}".format(I_WORKING_DIR))
 print("Current user name: {:s}".format(I_GETENV_USER))
 
-for each in sys.argv:
-    print("Parameter: {}".format(each))
-    try:
-        eval(sys.argv[1])
-        exit(0)
-    except NameError:
-        print("Operation nicht gefunden.".format(sys.argv[1]))
-        exit(6)
-    except:
-        print("Unbekannter Fehler!")
-        exit(7)
+try:
+    oper = "" + sys.argv[1] + "()"
+    print("Operation: {}".format(oper))
+    eval(oper)
+    exit(0)
+except NameError:
+    print("Operation nicht gefunden.".format(sys.argv[1]))
+finally:
+    print("Completed.")
 
