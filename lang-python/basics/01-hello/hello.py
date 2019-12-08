@@ -14,5 +14,6 @@
 # Ausgabe von 'Hallo Python' via print() und Verwendung des
 # Platzhalteroperators '%'; hier wird %s ersetzt durch "Python".
 print("Hello %s!" % ("Python"))
+print("Hello {}. Walking on the {}. Looking for {}.".format("World", "Moon", "Jupiter"))
 
 # Ausgabe: 'Hello Python!'
