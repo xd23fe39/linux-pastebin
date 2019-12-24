@@ -9,7 +9,7 @@ import random
 AppData = {
     "ID": "201912240050",
     "TYPE": "DIALOG",
-    "NAME": "Sample Application",
+    "NAME": "DIALOG Application (Sample)",
     "ASK": "Wie heißt Deine Lieblingsfarbe?",
     "CHOOSE": ["rot", "grün", "blau", "gelb"],
     "IFOK": ["Sehr schöne Farbe.", "Warum gerade die!?.", "Danke!", "Super!"],
@@ -25,11 +25,13 @@ class Application:
         self.data = data
 
     def main(self):
+        # Startbildschirm anzeigen
         print("ID: {:s}".format(self.data["ID"]))
         print("NAME: {:s}".format(self.data["NAME"]))
         print("")
+        # Eingabe anfordern
         intend = input(self.data["ASK"] + " ")
-
+        # Antworten 
         for value in self.data["CHOOSE"]:
             if (value == intend):
                 say = self.data["IFOK"][random.randint(0,3)]
