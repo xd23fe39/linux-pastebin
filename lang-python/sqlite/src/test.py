@@ -28,12 +28,12 @@ try:
     data = cur.fetchone()
     
     # Ausgabe
-    print "SQLite version: %s" % data    
-    print "Platform: %s" % sys.platform
+    print("SQLite version:", data)    
+    print("Platform:", sys.platform)
 
-except sqlite.Error, e:
+except sqlite.Error:
     
-    print "Error %s:" % e.args[0]
+    print("Error: ", e.args[0])
     sys.exit(1)
     
 finally:
